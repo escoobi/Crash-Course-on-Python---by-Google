@@ -1,6 +1,7 @@
 filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
-# Generate newfilenames as a list containing the new filenames
-# using as many lines of code as your chosen method requires.
+"""_Trabalhando com List e List Compression_
+    Substitui as extensões .hpp por .h
+"""
 for w, x in enumerate(filenames):
     if x.endswith(".hpp"):
         filenames[w] = x.replace(".hpp", ".h")
