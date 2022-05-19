@@ -1,4 +1,15 @@
+""" This quiz is a google test for course Python
+    Basically get log information a dictionary and check if user is logged or no.
+"""
 def get_event_date(event):
+  """Function for get event date
+
+  Args:
+      event (String): Current date the computer
+
+  Returns:
+      String: Only date
+  """
   return event.date
 
 def current_users(events):
@@ -21,7 +32,7 @@ def generate_report(machines):
   for machine, users in machines.items():
     if len(users) > 0:
       user_list = ", ".join(users)
-      print("{}: {}".format(machine, user_list))
+      print (f"{machine}: {user_list}")
       
 class Event:
   def __init__(self, event_date, event_type, machine_name, user):
